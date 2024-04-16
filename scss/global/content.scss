@@ -1,0 +1,78 @@
+.container {
+  max-width: 400px;
+  padding: $finger-size;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Content {
+  background-color: $color-dark-grey;
+  border-radius: 9px;
+  padding: 30px;
+
+  @include mq("mobile") {
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  &-image {
+    img {
+      width: 112px;
+      height: 112px;
+      border-radius: 90px;
+      margin-bottom: $gutter;
+    }
+  }
+
+  &-info {
+    &-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    &-city {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $gutter;
+    }
+
+    &-job {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: $gutter;
+    }
+  }
+
+  &-link {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: 300px;
+      font-size: 1rem;
+      font-weight: 700;
+      background-color: $color-grey;
+      padding: 15px 50px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+
+      @include mq("mobile") {
+        width: 280px;
+      }
+
+      &:active,
+      &:hover {
+        color: $color-off-black;
+        background-color: $color-primary;
+      }
+    }
+  }
+}
