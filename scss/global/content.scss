@@ -1,4 +1,4 @@
-.container {
+.Content {
   max-width: 400px;
   padding: $finger-size;
   margin-top: auto;
@@ -7,18 +7,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.Content {
+  padding: 40px;
   background-color: $color-dark-grey;
   border-radius: 9px;
-  padding: 30px;
 
   @include mq("mobile") {
     max-width: 330px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
   }
   &-image {
     img {
@@ -51,7 +47,6 @@
   }
 
   &-link {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 
